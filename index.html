@@ -20,7 +20,7 @@
     <meta property="twitter:title" content="PZA PARTY :: UNDERGROUND SLICE SOCIETY">
     <meta property="twitter:description" content="Mystery popup pizza cult. EST. 2021. Next drop: July 23rd 2025. Follow the pie.">
     <meta property="twitter:image" content="https://pzaparty.xyz/public/preview.png">
-    <meta property="twitter:site" content="@connerskitchen">
+    <meta property="twitter:site" content="@kitchen_of_conner">
     
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=VT323&display=swap" rel="stylesheet">
 </head>
@@ -37,9 +37,9 @@
 
     <!-- Main Pizza Image Section -->
     <div class="hero-pizza">
-        <a href="https://twitter.com/connerskitchen" class="pizza-link">
+        <a href="https://instagram.com/kitchen_of_conner" class="pizza-link">
             <img src="public/pizza.png" alt="Slice of Pizza" id="pizza">
-            <div class="pizza-caption">FOLLOW THE PIE @connerskitchen</div>
+            <div class="pizza-caption">FOLLOW THE PIE @kitchen_of_conner</div>
         </a>
     </div>
 
@@ -135,16 +135,14 @@
             <span class="bracket">[</span> STAY CONNECTED <span class="bracket">]</span>
         </h2>
         <div class="social-links">
-            <a href="https://twitter.com/connerskitchen" class="social-link">
-                TWITTER @connerskitchen
-            </a>
             <a href="https://instagram.com/kitchen_of_conner" class="social-link">
                 INSTAGRAM @kitchen_of_conner
             </a>
-            <div class="email-signup">
-                <div class="signup-text">JOIN THE UNDERGROUND:</div>
-                <input type="email" placeholder="your@email.com" class="email-input">
-                <button class="signup-btn">INITIATE</button>
+            <div class="cta-section">
+                <div class="cta-text">STAY IN THE LOOP:</div>
+                <a href="https://instagram.com/kitchen_of_conner" class="cta-link">
+                    FOLLOW FOR DROP ALERTS & MENU UPDATES
+                </a>
             </div>
         </div>
     </div>
@@ -493,37 +491,27 @@
         color: var(--primary-bg);
     }
 
-    .email-signup {
+    .cta-section {
         margin-top: 30px;
     }
 
-    .signup-text {
+    .cta-text {
         margin-bottom: 15px;
         color: var(--cheese-yellow);
     }
 
-    .email-input {
-        background: transparent;
-        border: 1px solid var(--accent-green);
-        color: var(--white);
-        padding: 10px;
-        margin-right: 10px;
-        font-family: inherit;
-        width: 200px;
-    }
-
-    .signup-btn {
-        background: var(--pizza-red);
-        color: var(--white);
-        border: none;
+    .cta-link {
+        color: var(--accent-green);
+        text-decoration: none;
+        font-size: 1.2rem;
         padding: 10px 20px;
-        cursor: pointer;
-        font-family: inherit;
+        border: 1px solid var(--accent-green);
         transition: all 0.3s ease;
+        display: inline-block;
     }
 
-    .signup-btn:hover {
-        background: var(--cheese-yellow);
+    .cta-link:hover {
+        background: var(--accent-green);
         color: var(--primary-bg);
     }
 
@@ -558,10 +546,15 @@
             grid-template-columns: 1fr;
         }
         
-        .email-input {
+        .social-link {
             width: 100%;
-            margin-bottom: 10px;
             margin-right: 0;
+            margin-bottom: 15px;
+        }
+        
+        .cta-link {
+            display: block;
+            margin-top: 10px;
         }
     }
 </style>
